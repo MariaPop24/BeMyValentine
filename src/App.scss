@@ -1,0 +1,35 @@
+@import "./styles/global-colors";
+@import "./styles/global-fonts";
+
+.App {
+  text-align: center;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+body {
+  background-color: $color-pink-1;
+}
+
+.buttons {
+  &--open {
+    background-color: transparent;
+    color: $color-pink-4;
+    font-size: 1rem;
+    font-family: $primary-font;
+    font-weight: bold;
+    padding: 10px 50px;
+    border: 3px solid $color-pink-4;
+    border-radius: 5px;
+    letter-spacing: 1px;
+    margin-top: 6rem;
+  }
+
+  &--open:hover {
+    background-color: $color-pink-4;
+    color: $color-white;
+    transition: 0.5s;
+  }
+}

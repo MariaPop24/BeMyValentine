@@ -1,0 +1,66 @@
+@import "../../styles/global-colors";
+
+.letter {
+  &--container {
+    position: relative;
+    width: 300px;
+    height: 200px;
+    background-color: #f5f5f5;
+    border-radius: 5px;
+    overflow: hidden;
+  }
+}
+
+.upper-triangle {
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-bottom: 100px solid $color-pink-4;
+}
+
+.left-triangle {
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-left: 150px solid $color-pink-3;
+}
+
+.right-triangle {
+  width: 0;
+  height: 0;
+  border-top: 100px solid transparent;
+  border-bottom: 100px solid transparent;
+  border-right: 150px solid $color-pink-3;
+}
+
+.bottom-triangle {
+  position: absolute;
+  top: 0px;
+  left: 0;
+  width: 0;
+  height: 0;
+  border-left: 150px solid transparent;
+  border-right: 150px solid transparent;
+  border-top: 100px solid $color-pink-4;
+}
+
+.x {
+  display: flex;
+}
+
+.letter-shadow {
+  position: absolute;
+  width: 200px;
+  height: 50px; // Adjust height for oval effect
+  background-color: rgba(0, 0, 0, 0.2); // Shadow color
+  border-radius: 50%; // Makes it an oval
+  bottom: 37%; // Moves it under the letter
+  left: 50%;
+  transform: translateX(-50%);
+  filter: blur(8px); // Softens the shadow
+}
